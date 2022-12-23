@@ -17,9 +17,7 @@ local Values = {
 }
 
 
-local function CreateStats(player,  ...)
-
-    local Matrices = {...}
+local function CreateStats(player,  Matrices)
 
     local Folder = Instance.new("Folder")
     Folder.Name = "leaderstats"
@@ -55,7 +53,7 @@ local function LoadData(player)
    if not success then
       warn(err)
    end
-
+   print(data, Values, Presets, err, success)
    CreateStats(player, Values)
 
 end
