@@ -56,7 +56,7 @@ local function LoadData(player)
       warn(err)
    end
 
-   CreateStats(player, data)
+   CreateStats(player, Values)
 
 end
 
