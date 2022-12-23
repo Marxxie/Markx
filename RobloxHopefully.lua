@@ -49,11 +49,11 @@ local function LoadData(player)
             v[2] = data[i][2]
         end
    end
-
+print(data, Values, Presets, err, success)
    if not success then
       warn(err)
    end
-   print(data, Values, Presets, err, success)
+   
    CreateStats(player, Values)
 
 end
